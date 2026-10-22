@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heitzinger – Ihre KFZ-Werkstatt</title>
+    <meta name="description" content="Heitzinger – Autowerkstatt für Service, Reparatur, Pickerl (§57a), Reifenwechsel und Diagnose.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a class="logo" href="#top" aria-label="Heitzinger – zur Startseite">
+                <span class="logo-mark" aria-hidden="true">H</span>
+                <span class="logo-text">Heitzinger</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">
+        <span class="sr-only">Menü öffnen</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="#leistungen">Leistungen</a></li>
+                    <li><a href="#werkstatt">Werkstatt</a></li>
+                    <li><a href="#zeiten">Öffnungszeiten</a></li>
+                    <li><a class="nav-cta" href="#kontakt">Termin anfragen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inhalt">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <h1>Ihr Auto ist bei uns <span class="nowrap">in guten Händen.</span></h1>
+                <p class="hero-lead">
+                    Service, Reparatur und Pickerl aus einer Hand. Wir sagen Ihnen vorher, was gemacht werden muss und was es kostet.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#kontakt">Termin anfragen</a>
+                    <a class="btn btn-ghost" href="tel:+430000000000">+43 000 000 000</a>
+                </div>
+            </div>
+            <div class="hero-stripe" aria-hidden="true"></div>
+        </section>
+
+        <!-- LEISTUNGEN -->
+        <section class="section" id="leistungen">
+            <div class="container">
+                <h2>Was wir für Ihr Auto tun</h2>
+
+                <ul class="service-list">
+                    <li>
+                        <h3>Service und Wartung</h3>
+                        <p>Ölwechsel, Filter, Bremsen und alles nach Herstellervorgabe, damit Ihre Garantie erhalten bleibt.</p>
+                    </li>
+                    <li>
+                        <h3>Reparaturen aller Marken</h3>
+                        <p>Vom Auspuff bis zum Fahrwerk. Sie bekommen vor Arbeitsbeginn einen Kostenvoranschlag.</p>
+                    </li>
+                    <li>
+                        <h3>Pickerl (§57a)</h3>
+                        <p>Gutachten nach §57a KFG. Kleine Mängel beheben wir gleich vor Ort.</p>
+                    </li>
+                    <li>
+                        <h3>Reifenservice</h3>
+                        <p>Wechseln, wuchten, einlagern. Für Sommer- und Winterreifen.</p>
+                    </li>
+                    <li>
+                        <h3>Diagnose und Elektronik</h3>
+                        <p>Fehlerspeicher auslesen, Warnleuchten klären, Sensoren und Elektrik prüfen.</p>
+                    </li>
+                    <li>
+                        <h3>Klimaservice</h3>
+                        <p>Klimaanlage prüfen, reinigen und Kältemittel auffüllen.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- WERKSTATT / ZAHLEN -->
+        <section class="section section-dark" id="werkstatt">
+            <div class="container split">
+                <div>
+                    <h2>Eine Werkstatt, bei der Sie wissen, woran Sie sind</h2>
+                    <p>
+                        Wir erklären Ihnen jeden Schritt in einfachen Worten und zeigen Ihnen auf Wunsch die ausgetauschten Teile. Rechnungen enthalten nur, was wir tatsächlich gemacht haben.
+                    </p>
+                </div>
+                <dl class="facts">
+                    <div>
+                        <dt>Kostenvoranschlag</dt>
+                        <dd>vor jeder Reparatur</dd>
+                    </div>
+                    <div>
+                        <dt>Ersatzteile</dt>
+                        <dd>Original oder Qualitätsteile, Sie entscheiden</dd>
+                    </div>
+                    <div>
+                        <dt>Abholung</dt>
+                        <dd>meist am selben Tag bei kleinen Arbeiten</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ÖFFNUNGSZEITEN -->
+        <section class="section" id="zeiten">
+            <div class="container split">
+                <div>
+                    <h2>Öffnungszeiten</h2>
+                    <p>Außerhalb dieser Zeiten erreichen Sie uns über das Formular. Wir melden uns am nächsten Werktag.</p>
+                    <p class="open-status" id="openStatus" aria-live="polite"></p>
+                </div>
+
+                <table class="hours" id="hoursTable">
+                    <caption class="sr-only">Öffnungszeiten nach Wochentag</caption>
+                    <tbody>
+                        <tr data-day="1">
+                            <th scope="row">Montag</th>
+                            <td>07:30 – 17:00</td>
+                        </tr>
+                        <tr data-day="2">
+                            <th scope="row">Dienstag</th>
+                            <td>07:30 – 17:00</td>
+                        </tr>
+                        <tr data-day="3">
+                            <th scope="row">Mittwoch</th>
+                            <td>07:30 – 17:00</td>
+                        </tr>
+                        <tr data-day="4">
+                            <th scope="row">Donnerstag</th>
+                            <td>07:30 – 17:00</td>
+                        </tr>
+                        <tr data-day="5">
+                            <th scope="row">Freitag</th>
+                            <td>07:30 – 14:00</td>
+                        </tr>
+                        <tr data-day="6">
+                            <th scope="row">Samstag</th>
+                            <td>geschlossen</td>
+                        </tr>
+                        <tr data-day="0">
+                            <th scope="row">Sonntag</th>
+                            <td>geschlossen</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- KONTAKT -->
+        <section class="section section-blue" id="kontakt">
+            <div class="container split">
+                <div>
+                    <h2>Termin anfragen</h2>
+                    <p>Schreiben Sie uns kurz, was an Ihrem Auto zu tun ist. Wir rufen Sie zurück und nennen Ihnen einen Termin.</p>
+
+                    <address class="contact-data">
+            <p><strong>Heitzinger KFZ-Werkstatt</strong><br>
+              Musterstraße 12<br>
+              0000 Musterort</p>
+            <p>
+              <a href="tel:+430000000000">+43 000 000 000</a><br>
+              <a href="mailto:office@heitzinger.example">office@heitzinger.example</a>
+            </p>
+          </address>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                        <p class="error" id="nameError" role="alert"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Telefon oder E-Mail</label>
+                        <input type="text" id="phone" name="phone" autocomplete="tel" required>
+                        <p class="error" id="phoneError" role="alert"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="car">Fahrzeug (Marke, Modell, Baujahr)</label>
+                        <input type="text" id="car" name="car">
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Was ist zu tun?</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <p class="error" id="messageError" role="alert"></p>
+                    </div>
+
+                    <button class="btn btn-dark" type="submit">Anfrage senden</button>
+                    <p class="form-success" id="formSuccess" role="status"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2026</span> Heitzinger KFZ-Werkstatt</p>
+            <ul>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#top">Nach oben</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
